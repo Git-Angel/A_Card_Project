@@ -42,3 +42,28 @@ label {
 .label input {
   width: 310px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .label input,
+  .valid,
+  input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .input-row {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .valid {
+    max-width: 60px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
