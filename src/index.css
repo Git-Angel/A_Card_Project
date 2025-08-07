@@ -120,3 +120,8 @@ body{
 .continue-btn:hover {
   background: #4b0075;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+}

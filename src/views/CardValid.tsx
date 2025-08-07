@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // ✅ Add this
 import "../styles/CardVaild.css";
 
 // ✅ Define error field types
@@ -10,6 +11,8 @@ type ErrorFields = {
 };
 
 const CardValid = () => {
+  const navigate = useNavigate(); // ✅ Hook to navigate
+
   // ✅ Input state
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
@@ -34,8 +37,8 @@ const CardValid = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      alert("Form submitted successfully!");
-      // You can navigate to another page or reset form here
+      // ✅ Navigate to Thank You page
+      navigate("/");
     }
   };
 
