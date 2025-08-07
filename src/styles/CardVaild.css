@@ -1,0 +1,44 @@
+.input-row {
+  display: flex;
+  gap: 15px;
+}
+
+.valid {
+  width: 40px;
+}
+
+input {
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+
+.input-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-size: 10px;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.label input {
+  width: 310px;
+}
