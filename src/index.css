@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  /* Gradients */
+  --gradient-active-border: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+
+  /* Colors */
+  --color-red-400: hsl(0, 100%, 66%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-gray-200: hsl(270, 3%, 87%);
+  --color-gray-400: hsl(212, 12%, 71%);
+  --color-purple-950: hsl(278, 68%, 11%);
+
+  /* Font sizes */
+  --font-size-base: 18px;
+}
+
+
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Space Grotesk', sans-serif;
 }
+
 .card-success-container {
   display: flex;
   justify-content: center;
@@ -78,6 +98,12 @@ body{
   right: 20px;
   top: 90px;
   font-weight: bold;
+  background-color: var(--color-gray-400);
+  height: 35px;
+  width: 85%;
+  padding-left: 10px;
+  padding-right: 10px;
+ text-align: right;
 }
 
 .thank-you-section {
@@ -87,7 +113,8 @@ body{
 .checkmark {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #8b00ff, #ff00d4);
+  /*background: linear-gradient(135deg, #8b00ff, #ff00d4);*/
+  background: var(--gradient-active-border);
   color: white;
   border-radius: 50%;
   font-size: 2em;
@@ -107,7 +134,7 @@ body{
 }
 
 .continue-btn {
-  background: #2c003e;
+  background: var(--color-purple-950);
   color: white;
   border: none;
   padding: 12px 30px;
@@ -118,7 +145,7 @@ body{
 }
 
 .continue-btn:hover {
-  background: #4b0075;
+  background: var(--color-purple-950);
 }
 
 .error {
@@ -181,6 +208,10 @@ body{
     width: 100%;
     max-width: 300px;
     font-size: 1em;
+  }
+  .cvc {
+    width: 80%;
+    max-width: 300px;
   }
 }
 

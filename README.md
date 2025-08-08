@@ -1,20 +1,21 @@
 # Frontend Mentor - Interactive Card Details Form Solution
 
-This is my solution to the [Interactive Card Details Form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). It's a great project for practicing form validation, responsive layouts, and state handling in React.
+This is my solution to the [Interactive Card Details Form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). The goal was to build a visually appealing and interactive credit card form that validates user input and displays real-time feedback — all while staying responsive across different devices.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My Process](#my-process)
   - [Built With](#built-with)
+  - [Features](#features)
   - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -24,23 +25,27 @@ This is my solution to the [Interactive Card Details Form challenge on Frontend 
 
 Users should be able to:
 
-- Fill in the form and see the card details update in real-time
-- Receive error messages when the form is submitted if:
-  - Any input field is empty
-  - The card number, expiry date, or CVC fields are in the wrong format
-- View the optimal layout depending on their device’s screen size
-- See hover, active, and focus states for all interactive elements on the page
+- Fill in the form and see the card details update in real time
+- Receive validation messages for:
+  - Empty input fields
+  - Incorrect formats (e.g., card number not 16 digits, CVC not 3 digits)
+- Submit successfully and see a thank-you screen
+- View the correct layout based on device size (mobile/desktop)
+- Experience transitions and hover/focus states for interactive elements
 
-### Screenshot
+### Screenshots
 
-![Screenshot of the solution](./screenshot.jpg)
+| Mobile Design | Complete State |
+|---------------|----------------|
+| ![Mobile Design](./src/assets/Images/Screenshot_Mobile_View.png)  |
+| ![Desktop Design](./src/assets/Images/Screenshot_Desktop_View.png)|
 
-> Replace with an actual screenshot from your app
+
 
 ### Links
 
-- **Solution URL:** [https://github.com/yourusername/interactive-card-details-form](https://github.com/yourusername/interactive-card-details-form)
-- **Live Site URL:** [https://your-live-site-url.com](https://your-live-site-url.com)
+- **Live Site URL:** [https://a-project.vercel.app](https://a-project.vercel.app)
+- **Solution GitHub Repo:** [https://github.com/Git-Angel/A_Card_Project](https://github.com/Git-Angel/A_Card_Project)
 
 ---
 
@@ -51,16 +56,50 @@ Users should be able to:
 - Semantic HTML5
 - CSS custom properties
 - Flexbox
+- Media queries
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
-- TypeScript
-- Plain CSS (no external libraries)
+- [TypeScript](https://www.typescriptlang.org/)
+- React Router (`react-router-dom`)
+- Local component state and props
+- Form validation logic using TypeScript
+- [Google Fonts - Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+
+### Features
+
+- Live card preview with masked number format
+- Smooth page transitions using `react-router-dom`
+- Success confirmation message after submission
+- Fully responsive design for both desktop and mobile views
+- Clean and simple code structure for easy scalability
 
 ### What I Learned
 
-- Managing form inputs and state in React
-- Real-time input formatting (e.g., card number spacing)
-- Conditional rendering for form validation messages
-- Responsive UI with CSS Flexbox and media queries
+- How to implement real-time input formatting in React
+- Managing form state and input validation using TypeScript
+- Handling routing between pages with React Router
+- Creating reusable components for layout and logic separation
+- Styling with plain CSS while maintaining responsiveness
 
-```tsx
+### Continued Development
+
+Areas I’d like to explore more:
+
+- Adding unit tests for validation logic
+- Extracting form input components for better reusability
+- Adding accessibility features like ARIA attributes and keyboard support
+
+### Useful Resources
+
+- [React Docs](https://reactjs.org/docs/getting-started.html)
+- [MDN Web Docs - CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout)
+- [Vite Documentation](https://vitejs.dev/)
+- [Space Grotesk Font](https://fonts.google.com/specimen/Space+Grotesk)
+
+---
+
+## Author
+
+- GitHub – [@Git-Angel](https://github.com/Git-Angel)
+
+---
